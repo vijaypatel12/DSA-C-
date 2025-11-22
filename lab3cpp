@@ -1,0 +1,68 @@
+// #include <iostream>
+// using namespace std;
+
+// class electricity_consumption {
+//     public:
+//     int n, even = 0, odd = 0;
+
+//     void input() {
+//         cout << "Enter number of consumption entries: ";
+//         cin >> n;
+
+//         cout << "Enter consumption values: " << endl;
+//         for (int i = 0; i < n; i++) {
+//             int unit;
+//             cin >> unit;
+//             if (unit % 2 == 0)
+//                 even++;
+//             else
+//                 odd++;
+//         }
+//     }
+
+//     void output() {
+//         cout << "Total even consumption entries: " << even << endl;
+//         cout << "Total odd consumption entries: " << odd << endl;
+//     }
+// };
+
+// int main() {
+//     electricity_consumption e1;
+//     e1.input();
+//     e1.output();
+//     return 0;
+// }
+
+#include <iostream>
+using namespace std;
+class electricity{
+    public:
+    int n,even=0,odd=0;
+    void input(){
+        cout<<"Enter consumption entries";
+        cin>>n;
+
+        cout<<"Enter consumption value";
+        for(int i=0;i<n;i++){
+            int unit;
+            cin>>unit;
+            if(unit%2==0)
+                even++;
+            else
+                odd++;
+
+        }
+
+    }
+    void output(){
+         cout << "Total even consumption entries: " << even << endl;
+         cout << "Total odd consumption entries: " << odd << endl;
+
+    }
+};
+int main(){
+    electricity e1;
+    e1.input();
+    e1.output();
+    return 0;
+}
